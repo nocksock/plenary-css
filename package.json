@@ -11,12 +11,17 @@
   "files": [
     "lib/*"
   ],
+  "exports": {
+    ".": "./lib/main.css",
+    "./*": "./lib/*"
+  },
   "keywords": [
     "experimental",
     "css-functions",
     "css",
     "canary"
   ],
+
   "author": "Nils Riedemann",
   "license": "MIT",
   "packageManager": "pnpm@10.5.2"
