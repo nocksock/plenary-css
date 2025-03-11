@@ -15,7 +15,7 @@
   result: calc(round(var(--value), 1));
 }
 
-@function --lerp(--a, --b, --t) {
+@function --lerp(--a, --b, --t<number>: --sibling-factor()) {
   result: calc(
     var(--a) + (var(--b) - var(--a)) * var(--t)
   );
