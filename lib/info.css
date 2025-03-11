@@ -1,0 +1,4 @@
+@function --sibling-factor() {
+  result: calc(sibling-index()/sibling-count());
+}
+

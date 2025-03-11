@@ -14,3 +14,9 @@
 @function --to-integer(--value <number>) {
   result: calc(round(var(--value), 1));
 }
+
+@function --lerp(--a, --b, --t) {
+  result: calc(
+    var(--a) + (var(--b) - var(--a)) * var(--t)
+  );
+}
