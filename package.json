@@ -1,0 +1,23 @@
+{
+  "name": "plenary-css",
+  "version": "0.2.0",
+  "description": "plenary: full; complete; entire; absolute; unqualified. All the css functions I don't want to write twice.",
+  "main": "lib/main.css",
+  "unpkg": "lib/main.css",
+  "scripts": {
+    "release": "pnpm version minor && pnpm publish --no-git-checks",
+    "release:canary": "pnpm version prerelease --preid=canary && pnpm publish --tag canary --no-git-checks"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "keywords": [
+    "experimental",
+    "css-functions",
+    "css",
+    "canary"
+  ],
+  "author": "Nils Riedemann",
+  "license": "MIT",
+  "packageManager": "pnpm@10.5.2"
+}
