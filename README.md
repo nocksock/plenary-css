@@ -6,7 +6,7 @@ All the css functions I don't want to write twice.
 >
 >     full; complete; entire; absolute; unqualified.
 
-> [!WARN]
+> [!warning]
 > CSS functions are still experimental and only available in Chrome Canary.
 > Many things will break left and right.
 > This package is currently only for my own convenience.
