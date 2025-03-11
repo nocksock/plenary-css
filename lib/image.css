@@ -1,0 +1,16 @@
+@function --disc(--r <length>, --disc-color <color>: magenta) {
+  --d: calc(var(--r) * 2);
+  result: var(--d) var(--d) radial-gradient(circle, var(--disc-color) 0 var(--r), transparent 0 var(--r));
+}
+
+
+@function --circle(--r, --line-width: 2px, --circle-color <color>: #aaa, --background <color>: canvas) {
+  --d: calc(var(--r) * 2);
+  result: 
+      center / --disc(calc(var(--r) - var(--line-width)), var(--background))
+      no-repeat
+    ,
+      center / --disc(var(--r), var(--circle-color))
+      no-repeat
+  ;
+}
