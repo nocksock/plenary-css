@@ -1,0 +1,16 @@
+@function --sign(--value <number>) {
+  result: calc(max(-1, min(1, var(--value) * infinity)));
+}
+
+@function --abs(--value <number>) {
+  result: calc(--sign(var(--value)) * var(--value));
+}
+
+@function --inv(--value <number>) {
+  result: calc(var(--value) * 1);
+}
+
+/* convert a float number to integer */
+@function --to-integer(--value <number>) {
+  result: calc(round(var(--value), 1));
+}

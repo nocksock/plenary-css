@@ -1,6 +1,6 @@
 {
   "name": "plenary-css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "plenary: full; complete; entire; absolute; unqualified. All the css functions I don't want to write twice.",
   "main": "lib/main.css",
   "unpkg": "lib/main.css",
