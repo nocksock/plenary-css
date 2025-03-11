@@ -1,0 +1,3 @@
+@function --lerp-color(--a<color>, --b<color>, --t<number>: --sibling-factor(), --mode: in lch longer hue) {
+  result: color-mix(var(--mode), var(--a), var(--b) calc(var(--t) * 100%));
+}
