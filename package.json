@@ -1,6 +1,6 @@
 {
   "name": "plenary-css",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "plenary: full; complete; entire; absolute; unqualified. All the css functions I don't want to write twice.",
   "main": "lib/main.css",
   "unpkg": "lib/main.css",
@@ -21,7 +21,6 @@
     "css",
     "canary"
   ],
-
   "author": "Nils Riedemann",
   "license": "MIT",
   "packageManager": "pnpm@10.5.2"
