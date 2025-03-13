@@ -1,0 +1,37 @@
+@layer plenary.font {
+  :root {
+    --font-scale-min2nd: 1.067;
+    --font-scale-maj2nd: 1.125;
+    --font-scale-min3rd: 1.2;
+    --font-scale-maj3rd: 1.35;
+    --font-scale-p4: 1.333;
+    --font-scale-aug4: 1.414;
+    --font-scale-p5: 1.5;
+    --font-scale-gold: 1.618;
+  }
+
+  @function --data-font-scale() {
+    result: attr(data-font-scale type(<number>), 1);
+  }
+
+  @function --font-scale(--step: --data-font-scale()) {
+    --_font-scale-factor: clamp(1.05, var(--font-scaling, var(--font-scale-maj3rd)), 2);  
+    --_font-scale-base: var(--font-scale-base, 16pt);
+    --_font-scale-min: var(--font-scale-min, 12pt);
+    --_font-scale-round: var(--font-scale-round, 0.1);
+
+    result: calc(
+      round(
+        max(
+          var(--_font-scale-min),
+            var(--_font-scale-base) 
+              * pow(
+                var(--_font-scale-factor),
+                var(--step)
+              )
+        ),
+        var(--_font-scale-round) * 1pt
+      )
+    );
+  }
+}
